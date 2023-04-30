@@ -1,5 +1,4 @@
 import SwiftUI
-import HorizonKit
 import ComposableArchitecture
 
 struct ___FILEBASENAMEASIDENTIFIER___Feature: ReducerProtocol {

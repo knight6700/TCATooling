@@ -1,5 +1,4 @@
 import SwiftUI
-import HorizonKit
 import ComposableArchitecture
 
 struct ___FILEBASENAMEASIDENTIFIER___Feature: ReducerProtocol {
@@ -29,6 +28,8 @@ struct ___FILEBASENAMEASIDENTIFIER___View: View {
     }
 }
 
+
+#if DEBUG
 struct ___FILEBASENAMEASIDENTIFIER___View_Previews: PreviewProvider {
     static var store: StoreOf<___FILEBASENAMEASIDENTIFIER___Feature> {
         .init(
@@ -38,18 +39,6 @@ struct ___FILEBASENAMEASIDENTIFIER___View_Previews: PreviewProvider {
     }
     static var previews: some View {
         ___FILEBASENAMEASIDENTIFIER___View(store: store)
-    }
-}
-
-#if DEBUG
-struct ___FILEBASENAMEASIDENTIFIER___StateBuilder {
-
-    init(builder: (inout ___FILEBASENAMEASIDENTIFIER___StateBuilder) -> Void = { _ in }) {
-        builder(&self)
-    }
-
-    func build() -> ___FILEBASENAMEASIDENTIFIER___Feature.State {
-        .init()
     }
 }
 #endif
