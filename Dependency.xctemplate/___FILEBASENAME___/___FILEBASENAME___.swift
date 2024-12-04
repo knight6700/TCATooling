@@ -21,7 +21,7 @@ extension ___FILEBASENAMEASIDENTIFIER___: TestDependencyKey {
 
 
 extension DependencyValues {
-    var <#name#>: ___FILEBASENAMEASIDENTIFIER___ {
+    var ___VARIABLE_VAR_FEATURE_IDENTIFIER___: ___FILEBASENAMEASIDENTIFIER___ {
     get { self[___FILEBASENAMEASIDENTIFIER___.self] }
     set { self[___FILEBASENAMEASIDENTIFIER___.self] = newValue }
   }

@@ -7,9 +7,9 @@
 	<key>Kind</key>
 	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
 	<key>Description</key>
-	<string>An empty Swift file for package.</string>
+	<string>Template with custom file name and suffix.</string>
 	<key>Summary</key>
-	<string>An empty Swift file for package.</string>
+	<string>Create a Swift file with a custom base name and suffix.</string>
 	<key>SortOrder</key>
 	<string>1</string>
 	<key>Image</key>
@@ -31,17 +31,17 @@
 	<array>
 		<dict>
 			<key>Identifier</key>
-			<string>productName</string>
+			<string>FEATURE_IDENTIFIER</string>
 			<key>Required</key>
 			<true/>
 			<key>Name</key>
-			<string>Name:</string>
+			<string>Base Feature Name</string>
 			<key>Description</key>
-			<string>The name of the file to create</string>
+			<string></string>
 			<key>Type</key>
 			<string>text</string>
-			<key>NotPersisted</key>
-			<true/>
+			<key>Default</key>
+			<string>___FILEBASENAME___Feature</string>
 		</dict>
 		<dict>
 			<key>Identifier</key>
@@ -56,6 +56,22 @@
 			<string>text</string>
 			<key>Default</key>
 			<string></string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_FEATURE_IDENTIFIER___View</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Name File Without View:</string>
+			<key>Description</key>
+			<string>The name of the file to create</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>NotPersisted</key>
+			<true/>
 		</dict>
 	</array>
 </dict>
