@@ -22,7 +22,7 @@ public struct ___VARIABLE_FEATURE_IDENTIFIER___Feature {
 }
 struct ___VARIABLE_FEATURE_IDENTIFIER___View: View {
     
-    let store: StoreOf<___VARIABLE_FEATURE_IDENTIFIER___Feature>
+   @Bindable let store: StoreOf<___VARIABLE_FEATURE_IDENTIFIER___Feature>
     
     var body: some View {
         VStack {
